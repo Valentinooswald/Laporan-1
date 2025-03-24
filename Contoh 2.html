@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 600px;
+            margin: 0;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        input[disabled] {
+            background-color: #f0f0f0;
+        }
+        .gender {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 5px 15px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrasi Akun</h1>
+        <p><strong>Formulir Registrasi</strong></p>
+        <form>
+            <label>Masukkan nama:</label>
+            <input type="text" value="Yedija Valentino Oswald" disabled>
+            
+            <label>Masukkan NIM:</label>
+            <input type="text" value="202332166" disabled>
+            
+            <label>Masukkan email:</label>
+            <input type="email" value="yedijavalentino000@gmail.com" disabled>
+            
+            <label>Jenis Kelamin</label>
+            <div class="gender">
+                <input type="radio" name="gender" id="laki" value="Laki-Laki">
+                <label for="laki">Laki-Laki</label>
+                <input type="radio" name="gender" id="perempuan" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+            
+            <label>Agama</label>
+            <select>
+                <option>Islam</option>
+                <option>Kristen</option>
+                <option>Katolik</option>
+                <option>Hindu</option>
+                <option>Buddha</option>
+                <option>Konghucu</option>
+            </select>
+            
+            <label>Masukkan password:</label>
+            <input type="password" value="admin123" disabled>
+            
+            <label>Konfirmasi password:</label>
+            <input type="password">
+            
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
